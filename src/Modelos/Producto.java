@@ -9,17 +9,13 @@ public class Producto {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private int id; 
-    
     @Basic
     private String nombre; 
     private String codigo; 
     private int unidades; 
     private String proveedor; 
     
-    
-    public Producto() { 
-        
-    }
+    public Producto() {}
     
     public Producto(int id, String nombre, String codigo, int unidades, String proveedor) { 
         this.id = id; 
